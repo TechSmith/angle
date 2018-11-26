@@ -1,0 +1,50 @@
+configurations
+{
+   Toolset {
+      key: "PlatformToolset";
+      choices : { v141 };
+   };
+}
+
+nuget {
+   nuspec {
+      id = ANGLE-TSC;
+      version : 1.0.0.0;
+      title: ANGLE Native NuGet Package;
+      authors: {TechSmith Corporation};
+      owners: {TechSmith Corporation};
+      licenseUrl: "https://github.com/TechSmith/angle/blob/ms-master/LICENSE";
+      iconUrl: "http://www.techsmith.com/favicon.ico";
+      requireLicenseAcceptance:false;
+      summary:ANGLE Native NuGet Package;
+      description: "ANGLE for Windows Desktop systems.";
+      releaseNotes: "This was built from TechSmith's ANGLE repo off the late2016 branch";
+      projectUrl: "https://www.techsmith.com";
+      copyright: Copyright (c) 2017-2018 TechSmith Corporation. All rights reserved.;
+      tags: { ANGLE, native, vs2017, OpenGL, OpenGLES };
+   };
+ 
+   files {
+      include: { #flatten = false; #destination = ${d_include}; include\** };
+
+      ("Debug,Release") => {
+         [${0}] {
+            lib:     
+	    { 
+	    	build\${0}_x64\lib\angle_common.lib;
+	    	build\${0}_x64\lib\angle_image_util.lib;
+	    	build\${0}_x64\lib\libANGLE.lib;
+	    	build\${0}_x64\lib\libEGL.lib;
+	    	build\${0}_x64\lib\libGLESv2.lib;
+	    	build\${0}_x64\lib\preprocessor.lib;
+	    	build\${0}_x64\lib\translator.lib;
+	    }
+            bin:
+	    { 
+	    	build\${0}_x64\libEGL.dll;
+		build\${0}_x64\libGLESv2.dll;
+            }
+         };
+      };
+   };
+}
