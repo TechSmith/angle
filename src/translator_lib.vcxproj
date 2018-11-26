@@ -260,7 +260,6 @@
     <ClInclude Include="compiler\translator\ExpandIntegerPowExpressions.h" />
     <ClInclude Include="compiler\translator\ExtensionBehavior.h" />
     <ClInclude Include="compiler\translator\FlagStd140Structs.h" />
-    <ClInclude Include="compiler\translator\ForLoopUnroll.h" />
     <ClInclude Include="compiler\translator\HashNames.h" />
     <ClInclude Include="compiler\translator\InfoSink.h" />
     <ClInclude Include="compiler\translator\Initialize.h" />
@@ -270,7 +269,6 @@
     <ClInclude Include="compiler\translator\InitializeVariables.h" />
     <ClInclude Include="compiler\translator\IntermNode.h" />
     <ClInclude Include="compiler\translator\Intermediate.h" />
-    <ClInclude Include="compiler\translator\LoopInfo.h" />
     <ClInclude Include="compiler\translator\MMap.h" />
     <ClInclude Include="compiler\translator\NodeSearch.h" />
     <ClInclude Include="compiler\translator\Operator.h" />
@@ -296,14 +294,9 @@
     <ClInclude Include="compiler\translator\VariableInfo.h" />
     <ClInclude Include="compiler\translator\VariablePacker.h" />
     <ClInclude Include="compiler\translator\blocklayout.h" />
-    <ClInclude Include="compiler\translator\depgraph\DependencyGraph.h" />
-    <ClInclude Include="compiler\translator\depgraph\DependencyGraphBuilder.h" />
-    <ClInclude Include="compiler\translator\depgraph\DependencyGraphOutput.h" />
     <ClInclude Include="compiler\translator\glslang.h" />
     <ClInclude Include="compiler\translator\glslang_tab.h" />
     <ClInclude Include="compiler\translator\length_limits.h" />
-    <ClInclude Include="compiler\translator\timing\RestrictFragmentShaderTiming.h" />
-    <ClInclude Include="compiler\translator\timing\RestrictVertexShaderTiming.h" />
     <ClInclude Include="compiler\translator\util.h" />
     <ClInclude Include="third_party\compiler\ArrayBoundsClamper.h" />
     <ClInclude Include="compiler\translator\OutputESSL.h" />
@@ -349,7 +342,6 @@
     <ClCompile Include="compiler\translator\EmulatePrecision.cpp" />
     <ClCompile Include="compiler\translator\ExpandIntegerPowExpressions.cpp" />
     <ClCompile Include="compiler\translator\FlagStd140Structs.cpp" />
-    <ClCompile Include="compiler\translator\ForLoopUnroll.cpp" />
     <ClCompile Include="compiler\translator\InfoSink.cpp" />
     <ClCompile Include="compiler\translator\Initialize.cpp" />
     <ClCompile Include="compiler\translator\InitializeDll.cpp" />
@@ -358,7 +350,6 @@
     <ClCompile Include="compiler\translator\IntermNode.cpp" />
     <ClCompile Include="compiler\translator\IntermTraverse.cpp" />
     <ClCompile Include="compiler\translator\Intermediate.cpp" />
-    <ClCompile Include="compiler\translator\LoopInfo.cpp" />
     <ClCompile Include="compiler\translator\Operator.cpp" />
     <ClCompile Include="compiler\translator\ParseContext.cpp" />
     <ClCompile Include="compiler\translator\PoolAlloc.cpp" />
@@ -380,15 +371,9 @@
     <ClCompile Include="compiler\translator\VariableInfo.cpp" />
     <ClCompile Include="compiler\translator\VariablePacker.cpp" />
     <ClCompile Include="compiler\translator\blocklayout.cpp" />
-    <ClCompile Include="compiler\translator\depgraph\DependencyGraph.cpp" />
-    <ClCompile Include="compiler\translator\depgraph\DependencyGraphBuilder.cpp" />
-    <ClCompile Include="compiler\translator\depgraph\DependencyGraphOutput.cpp" />
-    <ClCompile Include="compiler\translator\depgraph\DependencyGraphTraverse.cpp" />
     <ClCompile Include="compiler\translator\glslang_lex.cpp" />
     <ClCompile Include="compiler\translator\glslang_tab.cpp" />
     <ClCompile Include="compiler\translator\intermOut.cpp" />
-    <ClCompile Include="compiler\translator\timing\RestrictFragmentShaderTiming.cpp" />
-    <ClCompile Include="compiler\translator\timing\RestrictVertexShaderTiming.cpp" />
     <ClCompile Include="compiler\translator\util.cpp" />
     <ClCompile Include="third_party\compiler\ArrayBoundsClamper.cpp" />
     <ClCompile Include="compiler\translator\OutputESSL.cpp" />
