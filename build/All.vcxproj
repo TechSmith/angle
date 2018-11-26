@@ -24,11 +24,15 @@
     <RootNamespace>All</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration">
     <CharacterSet>MultiByte</CharacterSet>
     <ConfigurationType>Utility</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
     <PlatformToolset>v141</PlatformToolset>
@@ -65,7 +69,7 @@
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PreprocessorDefinitions>_VARIADIC_MAX=10;ANGLE_ENABLE_ESSL;ANGLE_ENABLE_GLSL;ANGLE_ENABLE_HLSL;ANGLE_TRANSLATOR_STATIC;GL_GLEXT_PROTOTYPES;ANGLE_PRELOADED_D3DCOMPILER_MODULE_NAMES={ "d3dcompiler_47.dll", "d3dcompiler_46.dll", "d3dcompiler_43.dll" };GL_APICALL=;EGLAPI=;ANGLE_ENABLE_D3D9;ANGLE_ENABLE_D3D11;ANGLE_ENABLE_OPENGL;ANGLE_ENABLE_VULKAN;DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME="angle";DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;ANGLE_DEQP_LIBTESTER_IMPLEMENTATION;EGL_EGLEXT_PROTOTYPES;ANGLE_DEQP_GLES2_TESTS;ANGLE_DEQP_GLES3_TESTS;ANGLE_DEQP_GLES31_TESTS;ANGLE_DEQP_EGL_TESTS;_DEBUG;ANGLE_ENABLE_DEBUG_ANNOTATIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <TreatWarningAsError>true</TreatWarningAsError>
       <WarningLevel>Level4</WarningLevel>
@@ -105,7 +109,7 @@
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PreprocessorDefinitions>_VARIADIC_MAX=10;ANGLE_ENABLE_ESSL;ANGLE_ENABLE_GLSL;ANGLE_ENABLE_HLSL;ANGLE_TRANSLATOR_STATIC;GL_GLEXT_PROTOTYPES;ANGLE_PRELOADED_D3DCOMPILER_MODULE_NAMES={ "d3dcompiler_47.dll", "d3dcompiler_46.dll", "d3dcompiler_43.dll" };GL_APICALL=;EGLAPI=;ANGLE_ENABLE_D3D9;ANGLE_ENABLE_D3D11;ANGLE_ENABLE_OPENGL;ANGLE_ENABLE_VULKAN;DEQP_SUPPORT_GLES31=1;DEQP_SUPPORT_GLES3=1;DEQP_SUPPORT_GLES2=1;DEQP_SUPPORT_EGL=1;DEQP_TARGET_NAME="angle";DEQP_GLES31_RUNTIME_LOAD=1;DEQP_GLES3_RUNTIME_LOAD=1;DEQP_GLES2_RUNTIME_LOAD=1;QP_SUPPORT_PNG=1;_HAS_EXCEPTIONS=1;ANGLE_DEQP_LIBTESTER_IMPLEMENTATION;EGL_EGLEXT_PROTOTYPES;ANGLE_DEQP_GLES2_TESTS;ANGLE_DEQP_GLES3_TESTS;ANGLE_DEQP_GLES31_TESTS;ANGLE_DEQP_EGL_TESTS;_DEBUG;ANGLE_ENABLE_DEBUG_ANNOTATIONS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <TreatWarningAsError>true</TreatWarningAsError>
       <WarningLevel>Level4</WarningLevel>
