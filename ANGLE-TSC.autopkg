@@ -9,7 +9,7 @@ configurations
 nuget {
    nuspec {
       id = ANGLE-TSC;
-      version : 1.0.1.0;
+      version : 1.0.2.0;
       title: ANGLE Native NuGet Package;
       authors: {TechSmith Corporation};
       owners: {TechSmith Corporation};
@@ -20,7 +20,7 @@ nuget {
       description: "ANGLE for Windows Desktop systems.";
       releaseNotes: "This was built with TeamCity from TechSmith's ANGLE repo off the tsc-master branch";
       projectUrl: "https://www.techsmith.com";
-      copyright: Copyright (c) 2017-2018 TechSmith Corporation. All rights reserved.;
+      copyright: Copyright (c) 2017-2019 TechSmith Corporation. All rights reserved.;
       tags: { ANGLE, native, vs2017, OpenGL, OpenGLES };
    };
  
